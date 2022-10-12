@@ -29,7 +29,7 @@ try:
     streamlit.error("Please select fruit to get information")
   else:
     back_from_function = getfruitvicedata(fruit_choice)
-    streamlit.dataframe(fruityvice_normalized)
+    streamlit.dataframe(back_from_function)
 
 except Exception as e:
     streamlit.error()
