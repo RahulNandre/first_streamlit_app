@@ -28,7 +28,7 @@ try:
     fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
     streamlit.dataframe(fruityvice_normalized)
 
-Except Exception as e:
+except Exception as e:
     streamlit.error()
  
 streamlit.stop()
